@@ -1,0 +1,458 @@
+
+html{
+	font-size: 10px;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	background-color: #f5f5f8;
+	margin: 0;
+}
+.navigation{
+	padding-top: 2rem;
+	position:fixed;
+	width: 100%;
+	z-index: 500;
+	&-img{
+		&.back{
+			display:none;
+		}
+	}
+	&-link{
+		display: inline-block;
+		color: #000;
+		font-size: 1.9rem;
+		font-weight: bold;
+		padding-top: 1.5rem;
+		text-decoration: none;
+		margin-left: 3rem;
+		&:hover{
+			color: #dadadd;
+			text-decoration:none;
+		}
+		&.back{
+			color: #fff;
+		}
+	}
+	&-block{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 2rem;
+	}
+	&-arrow{
+		display: none;
+		&.back{
+			display: block;
+		}
+	}
+}
+
+.header{
+	padding-top: 37rem;
+	text-align: center;
+	&-title{
+		font-weight: bold;
+		line-height: 5rem;
+		font-size: 4.6rem;
+	}
+	&-img{
+		margin-top: 2.5rem;
+	}
+	margin-bottom: 39.5rem;
+}
+
+.projects {
+	padding-top: 6rem;
+	background-color: #fff;
+	&-img {
+		display: inline-block;
+		margin-bottom: 3rem;
+		margin-right: 2rem;
+		max-width: 100%;
+		min-width: 100%;
+		&-cat{
+			position:relative;
+			margin-top: -38.5rem;
+			max-height: 33.5rem;
+		}
+	}
+	&-active {
+		width: 100%;
+		height: 100%; 
+		margin-right: 2rem;
+		background-color: #000;
+		&:hover{
+			opacity: 1;
+			cursor: pointer;
+			background-color: #000;
+			background: rgba(0, 0, 0, 1);
+			transition: all 0.3s ;
+			p{
+				opacity:1;
+			}
+			h3{
+				opacity:1;
+			}
+		}
+		h3{
+			font-size: 2rem;
+			font-weight: bold;
+			opacity:0;
+			text-align: center;
+			color: #fff;
+		}
+		p{
+			font-size: 1.6rem;
+			opacity:0;
+			text-align: center;
+			color: #fff;
+		}
+	}
+	&-first{
+		background: url(../img/projects/1.png) no-repeat center;
+		background-size: cover;
+		height: 38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+	&-second{
+		background: url(../img/projects/2.png) no-repeat center;
+		background-size: cover;
+		height: 38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+	&-third{
+		background: url(../img/projects/3.png) no-repeat center;
+		background-size: cover;
+		height: 38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+	&-fourth {
+		background: url(../img/projects/4.png) no-repeat center;
+		background-size: cover;
+		height: 38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+	&-fifth{
+		background: url(../img/projects/5.png) no-repeat center;
+		background-size: cover;
+		height: 38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+	&-sixth{
+		background: url(../img/projects/6.png) no-repeat center;
+		background-size: cover;
+		height: 80rem;
+		h3{
+			padding-top: 36rem;
+		}
+	}
+	&-seventh{
+		background: url(../img/projects/7.png) no-repeat center;
+		background-size: cover;
+		height: 38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+	&-eighth{
+		background: url(../img/projects/8.png) no-repeat center;
+		background-size: cover;
+		height: 38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+	&-ninth{
+		background: url(../img/projects/9.png) no-repeat center;
+		position: relative;
+		background-size: cover;
+		height: 38rem;
+		top: -38rem;
+		h3{
+			padding-top: 16rem;
+		}
+	}
+}
+.proverka{
+	margin-bottom: 3rem;
+}
+.contact{
+	padding-bottom: 10rem;
+	&-name{
+		padding-top: 10rem;
+		font-size: 5.8rem;
+		font-weight: bold;
+		margin-bottom: 8.5rem;
+	}
+	&-title{
+		font-weight: bold;
+		font-size: 2.1rem;
+		margin-bottom: 4.5rem;
+		text-transform: uppercase;
+	}
+	&-paragraph{
+		font-size: 1.8rem;
+		max-width: 22rem;
+		margin-bottom: 4rem;
+	}
+	&-link{
+		display: block;
+		text-decoration:none;
+		color: #000;
+		font-size: 1.8rem;
+		margin: 0;
+		margin-bottom: 4rem;
+		&:hover{
+			text-decoration: none;
+			color: #dadadd;
+		}
+	}
+	&-form{
+		&-input{
+			display: block;
+			width: 100%;
+			outline: none;
+		}
+	}
+
+}
+.input{
+	&-name{
+		padding: 1rem 1.5rem;
+		margin-bottom: 1.2rem;
+	}
+	&-message{
+		padding: 1rem 1.5rem;
+		margin-bottom: 2rem;
+		resize: none;
+	}
+}
+.button{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.8rem;
+	background-color: #000;
+	border: none;
+	padding: 1rem 1.5rem;
+}
+.back{
+	background-color: #231f20;
+}
+
+.work{
+	
+	&-first{
+		 display: none; 
+		background-color: #fff;
+		padding-bottom: 30rem;
+	}
+	&-img{
+		background: url(../img/work.png) no-repeat center;
+		background-size:cover;
+		height: 47rem;
+	}
+	&-title{
+		padding-top: 18rem;
+		font-size: 3rem;
+		font-weight: bold;
+	}
+	&-paragraph{
+		font-size: 1.6rem;
+	}
+	&-back{
+		text-align: center;
+		padding-top: 22rem;
+		h3{
+			text-transform: uppercase;
+			font-size: 1.8rem;
+			font-weight: bold;
+		}
+		&-content{
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+	&-button{
+		margin-top: 40rem;
+	}
+}
+.hide{
+	display:none;
+	&-no{
+		display: block;
+	}
+}
+
+
+@media(max-width: 1024px){
+	.projects-img-cat{
+		margin-top: -33rem;
+		max-height: 28rem;
+	}
+}
+@media(max-width: 768px){
+	.projects{
+		&-sixth{
+			margin-bottom: 3rem;
+			background-size:contain;
+		}
+		&-seventh{
+			background-size: cover;
+			height: 38rem;
+			margin-bottom: 3rem;
+		}
+		&-eighth{
+			margin-bottom: 3rem;
+			h3{
+				padding-top: 16rem;
+			}
+		}
+		&-ninth{
+			top: 0rem;
+			margin-bottom: 3rem;
+		}
+	}
+	.contact{
+		&-form{
+			&-input{
+				width: 80%;
+			}
+		}
+	}
+	.work{
+		&-first{
+			padding-bottom: 15rem;
+		}
+		&-back{
+			padding-top: 10rem;
+		}
+	}
+}
+@media(max-width: 417px){
+	.navigation{
+		padding-top: 1.5rem ;	
+		&-link{
+			display: inline-block;
+			color: #000;
+			font-size: 1.3rem;
+			font-weight: bold;
+			text-decoration: none;
+			margin-left: 1rem;
+			padding-top: 0;
+			&:hover{
+				color: #dadadd;
+				text-decoration: none;
+			}
+		}
+		&-arrow.back{
+			display:block;
+		}
+		&-block{
+			padding-bottom: 2rem;
+		}
+	}
+	.header{
+		padding-top: 17rem;
+		&-title{
+			line-height: 4rem;
+			font-size: 3.4rem;
+		}
+		&-img{
+			margin-top: 1.3rem;
+		}
+		margin-bottom: 17rem;
+	}
+	.projects{
+		&-active{
+			h3{
+				font-size:1.4rem;
+			}
+			p{
+				font-size: 1rem;
+			}
+		}
+		&-third{
+			background: url(../img/projects/3.png) no-repeat center;
+			background-size: cover;
+			height: 19rem;
+			h3{
+				padding-top: 8rem;
+			}
+		}
+		&-fourth {
+			background: url(../img/projects/4.png) no-repeat center;
+			background-size: cover;
+			height: 19rem;
+			h3{
+				padding-top: 8rem;
+			}
+		}
+		&-fifth{
+			background: url(../img/projects/5.png) no-repeat center;
+			background-size: cover;
+			height: 38rem;
+			h3{
+				padding-top: 16rem;
+			}
+		}
+		&-sixth{
+			background: url(../img/projects/6.png) no-repeat center;
+			background-size: cover;
+			height: 80rem;
+			h3{
+				padding-top: 36rem;
+			}
+		}
+		&-seventh{
+			background: url(../img/projects/7.png) no-repeat center;
+			background-size: cover;
+			height: 38rem;
+			h3{
+				padding-top: 16rem;
+			}
+		}
+		&-eighth{
+			background: url(../img/projects/8.png) no-repeat center;
+			background-size: cover;
+			height: 38rem;
+			h3{
+				padding-top: 16rem;
+			}
+		}
+		&-ninth{
+			background: url(../img/projects/9.png) no-repeat center;
+			position: relative;
+			background-size: cover;
+			height: 38rem;
+			h3{
+				padding-top: 16rem;
+			}
+		}
+	}
+	.work{
+		&-first{
+			padding-bottom: 5rem;
+		}
+		&-back{
+			padding-top: 5rem;
+		}
+		&-title{
+			padding-top: 5rem;
+		}
+	}
+	
+}
+
